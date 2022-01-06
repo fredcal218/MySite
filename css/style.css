@@ -75,10 +75,6 @@
 	font-size: 20px;
 }
 
-.scroll{
-	scroll-margin-top: 100px;
-}
-
 .mybtn:hover{
 	background-color: #17e7df;
 }
@@ -96,7 +92,6 @@
 }
 
 .myCardSize{
-	height: 35rem;
 	border-radius: 40px;
 	background-color: #0b7470;
 	overflow: hidden;
@@ -130,13 +125,26 @@
 	font-size: 20px;
 }
 
-@media (max-width: 480px) {
-	
-.title{
-	font-size:35px;
+.myImg{
+	border-radius: 30px;
 }
 
-.txtSubtitle{
-	font-size:18px;
+@media (max-width: 480px) {
+	.title{
+		font-size:35px;
+	}
+
+	.txtSubtitle{
+		font-size:18px;
+	}
+	.subtxt{
+		font-size: 15px;
+	}
 }
+
+@media (max-width: 1200px){
+	.myMargin{
+		padding-left: 50px;
+	}
+
 }
