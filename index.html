@@ -74,29 +74,33 @@
 		</nav>
 		<div class="container-fluid px-0 mybg">
 			<div class="row text-center">
-				<div class="col">
+				<div class="col-12 position-relative">
 					<img src="images/home-banner.jpg" class="img-fluid" alt="home banner">
-					<h1 class="display-1 text-light position-absolute top-50 start-50 translate-middle">Welcome to my <span class="spnStyle">site!</span></h1>
-					<h4 class="txtSubtitle">learn more about yours truly.</span></h1>
+					<div class="position-absolute top-50 start-50 translate-middle">
+						<h1 class="display-1 text-light">Welcome to my <span class="spnStyle">site!</span></h1>
+						<h4 class="txtSubtitle">learn more about yours truly.</span></h1>
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="container-fluid px-0 mybg">
 			<div class="row">
-				<div class="col pe-0">
+				<div class="col-6 pe-0">
 					<img src="images/Fred-Portrait.jpg" class="img-fluid" alt="Fred Cal's Picture">
 				</div>
-				<div class="col bg-dark">
+				<div class="col-6 bg-dark">
 					<div class="row">
 						<div class="col-12 mybg">
 							<h1 class="display-4 text-center scroll" id="about-me">About <span class="spnStyle">Me<span></h1>
 						</div>
 						<div class="col-12 p-5 mt-4">
-							<p class="subtxt txt-justify">Hello! I am John Wilmar Fredrick E. Calaguan, but you can call me Fred. I am a student in Lyceum of the Philippines Cavite, 
+							<p class="subtxt txt-justify" style="color: red;"">Hello! I am John Wilmar Fredrick E. Calaguan, but you can call me Fred. I am a student in Lyceum of the Philippines Cavite, 
 								currently studying Computer Science. I am still not completely set on what I want to do, but my aim is to either become a game developer, or back-end
 								developer. Even so, I can say that I will try my best in whatever I am doing.
 							</p>
 						</div>
-						<div class="col-12 px-5">
-							<div class="accordion" id="accordionInfo">
+						<div class="col-12 px-5 pb-5">
+							<div class="accordion position-relative" id="accordionInfo">
 								<div class="accordion-item myAcc">
 									<h2 class="accordion-header" id="head">
 										<button class="accordion-button collapsed myAccButton mybg" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
@@ -130,19 +134,24 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-12 p-5 mt-4">
+							<p class="subtxt txt-justify" style="color: red;">That's all the relevant information about me, the section below lists the interests that I have. I have no idea what else to write fuck it. I always hate about me parts where I need to describe myself, something I do not understand. jeiuhiosehtgoiheiogthosieghiosehgoieshiotheuithoeih
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			
+		</div>	
+		<div class="container-fluid mybg">
+			<div class="row p-0">
 				<div class="col">
 					<h1 class="display-4 text-center spnStyle scroll mybg" id="interests">Interests</h1>
 				</div>
 			</div>
-		</div>	
-		<div class="container-fluid mybg">
 			<div class="row bg-dark p-5">
 				<h1 class="display-7 spnStyle">Favorite Games:</h1>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselOsu" class="carousel slide" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -176,7 +185,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselSkyrim" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -210,7 +219,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselWitcher" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -244,7 +253,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselSouls" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -278,7 +287,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselmhw" class="carousel carousel-dark slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -312,7 +321,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselds3" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -346,7 +355,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselkh2" class="carousel carousel-dark slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -380,7 +389,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselsekiro" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -418,7 +427,7 @@
 			
 			<div class="row bg-dark p-5">
 				<h1 class="display-7 spnStyle">Favorite Anime:</h1>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselKaguya" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -452,7 +461,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselGundam" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -486,7 +495,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselKonosuba" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -520,7 +529,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselngnl" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -554,7 +563,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselrezero" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -588,7 +597,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselsao" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -622,7 +631,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselbofuri" class="carousel carousel-dark slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -656,7 +665,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 mb-5 mt-1">
+				<div class="col-md-6 mb-5 mt-1">
 					<div class="card myCardSize">
 						<div id="carouselrailgun" class="carousel slide card-img-top" data-bs-ride="true" data-bs-interval="7000">
 							<div class="carousel-indicators">
@@ -701,14 +710,14 @@
 				</div>
 			</div>
 			<div class="row mb-4 d-flex justify-content-center">
-				<div class="col-lg-auto">
+				<div class="col-auto">
 					<a href="https://www.facebook.com/fredcal218/" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
 							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
 						</svg>
 					</a>
 				</div>
-				<div class="col-lg-auto">
+				<div class="col-auto">
 					<a href="https://twitter.com/fredcal218" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-twitter" viewBox="0 0 16 16">
 							<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
