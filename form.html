@@ -35,11 +35,29 @@
 				var gender = document.getElementById("genderSelect");
 				var msg = document.getElementById("msgInput");
 					
+					if(fname.value==""){
+						document.getElementById("fNameValid").innerHTML = "Please select a first name!";
+					}
+					if(fname.value!=""){
+						document.getElementById("fNameValid").innerHTML = "";
+					}
+					if(email.value==""){
+						document.getElementById("emailValid").innerHTML = "Please select a valid email!";
+					}
+					if(email.value!=""){
+						document.getElementById("emailValid").innerHTML = "";
+					}
 					if(gender.value==0){
-						document.getElementById("genderValid").innerHTML = "Please select a gender option!!";
+						document.getElementById("genderValid").innerHTML = "Please select a gender option!";
 					}
 					if(gender.value!=0){
 						document.getElementById("genderValid").innerHTML = "";
+					}
+					if(msg.value==""){
+						document.getElementById("msgValid").innerHTML = "Please select a message!";
+					}
+					if(msg.value!=""){
+						document.getElementById("msgValid").innerHTML = "";
 					}
 					else{
 						$("#form").on("submit", function(e){
@@ -91,11 +109,11 @@
 				<h1>Feedback</h1>
 				<h5>Want to leave me a message? Drop it at the textbox below!</h5>
 				<p><span>(*)</span> fields are required</p>
-				<div class="row p-3">
+				<div class="row p-3 subtxt">
 					<div class="col-md-6 mb-4">
 						<label for="firstNameInput" class="form-label">First Name<span>(*)</span></label>
 						<input type="text" id="firstNameInput" class="form-control" placeholder="First Name" required>
-						<p id="fNameValid"></p>
+						<p id="fNameValid" class="myError"></p>
 					</div>
 					<div class="col-md-6 mb-4">
 						<label for="lastNameInput" class="form-label">Last Name</label>
@@ -104,22 +122,22 @@
 					<div class="col-md-9 mb-4">
 						<label for="emailInput" class="form-label">Email<span>(*)</span></label>
 						<input type="email" id="emailInput" class="form-control" placeholder="email@site.com" required>
-						<p id="emailValid"></p>
+						<p id="emailValid" class="myError"></p>
 					</div>
 					<div class="col-md-3 mb-4">
 						<label for="genderSelect" class="form-label">Gender<span>(*)</span></label>
-						<select class="form-select" aria-label="genderSelect" id="genderSelect">
-							<option value="0" selected>Gender</option>
-							<option value="1">Male</option>
-							<option value="2">Female</option>
-							<option value="3">Prefer not to Specify</option>
+						<select class="form-select" id="genderSelect" required>
+							<option value="" selected disabled>Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+							<option>Prefer not to Specify</option>
 						</select>
-						<p id="genderValid"></p>
+						<p id="genderValid" class="myError"></p>
 					</div>
 					<div class="col-12 mb-4">
 						<label for="msgInput" class="form-label">Message<span>(*)</span></label>
 						<textarea id="msgInput" class="form-control" rows="5" placeholder="It can be positive or negative. Words of encouragement are welcome too!" required></textarea>
-						<p id="msgValid"></p>
+						<p id="msgValid" class="myError"></p>
 					</div>
 					<div class="col-md-2 d-grid">
 						<button type="submit" class="btn btn-outline-light btn-lg mybtn" id="btn" onclick="validation()">Send</button>
