@@ -129,6 +129,10 @@
 	border-radius: 30px;
 }
 
+.formtxt{
+	font-size: 20px;
+}
+
 @media (max-width: 480px) {
 	.title{
 		font-size:35px;
