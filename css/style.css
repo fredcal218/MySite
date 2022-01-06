@@ -67,7 +67,6 @@
 }
 
 .subtxt{
-	color: white;
 	font-size: 20px;
 }
 
@@ -108,7 +107,6 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	right: 0;
 }
 
 .myAccButton{
@@ -124,4 +122,10 @@
 
 .myForm{
 	padding: 2px 15rem;
+}
+
+.myError{
+	color: red;
+	font-style: bold;
+	font-size: 20px;
 }
