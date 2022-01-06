@@ -72,10 +72,10 @@
 	</head>
 	<body class="mytxt mybg">
 		<a id="home"></a>
-		 <nav id="navbar "class="navbar navbar-expand-md sticky-top navbar-dark myNav">
+		 <nav id="navbar "class="navbar navbar-expand-lg sticky-top navbar-dark myNav">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html" style="color: #17e7df;  text-shadow: 1px 1px black;">
-					<img src="icon/logo.png" width="30" height="29" class="d-inline-block align-text-center border-2 border-dark rounded">
+				<a class="navbar-brand" href="index.html" style="color: #17e7df; text-shadow: 1px 1px black;">
+					<img src="icon/logo.png" width="30" height="29" class="d-inline-block border-2 align-text-center rounded">
 					Fred Cal
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,14 +83,15 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-							<a class="nav-link" href="index.html">Home</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link disabled" href="form.html">Feedback</a>
 						</li>
 					</ul>
 				</div>
-				<form>
+				<form class="d-flex justify-content-end">
 					<input class="form-control me-2 mytxtbox" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-dark mybtn" type="submit">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
